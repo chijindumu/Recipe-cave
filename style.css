@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Noto+Sans:wght@100;200&family=Pangolin&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+body{
+  font-family: lato;
+  padding: 3px;
+}
+.login, .logo{
+  letter-spacing: 0.05rem;
+}
+.menu{
+  filter: drop-shadow(2px 1px 1px #111111);
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  text-shadow: 1px 1px 2px #111111;
+  font-family: pangolin;
+}
+object{
+  filter: invert();
+}
+input::placeholder {
+  padding: 5px;
+}
+/*md:grid md:grid-rows-2 md:grid-flow-col md:gap-4*/
+@media(min-width:30rem){
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;*/
+}
+/*.cards{
+    flex: 0 0 33.33%;
+}*/
+
+}
